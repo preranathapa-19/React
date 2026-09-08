@@ -15,7 +15,6 @@ let rh1 = React.createElement(
 //props- argument that we can passs(attributes, properties)
 
 let realDomElem = document.querySelector("#root"); //Select here
-
 let rootOfReact = ReactDOM.createRoot(realDomElem); //react create it own dom
 
 rootOfReact.render(rh1);
