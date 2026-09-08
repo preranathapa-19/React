@@ -6,7 +6,6 @@ let h1 = document.createElement("h1");
 h1.textContent ="Hello";
 document.body.append(h1);
 
-
 //ReactDOM, virtual DOM
 let rh1 = React.createElement(
     "h1",
