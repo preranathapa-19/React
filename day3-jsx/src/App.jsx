@@ -7,7 +7,11 @@ let App = () =>{
       <h1>HEllo</h1>
       <h2>bye</h2>
       <h3>Go back</h3>
-      <About />
+      {/* <About /> */}
+      {/* {About("ragav")} */}
+      <About width="300" name="prerana">  
+        <h1>Heionhsj</h1>
+      </About>
     </div>
   );
 };
