@@ -1,18 +1,36 @@
-import React from 'react'
-import Hero from './components/Hero'
-import Navbar from "./Navbar";
-import Footer from "./components/Footer";
+import React, { useState } from "react";
 
-function App() {
+const App = () => {
+  let [count, setCount] = useState(0);
+
+   let [flag, setFlag] = useState(true);
+  
+
+  console.log(flag);
+  console.log(hello);
+
   return (
     <div>
+      <h1>Count is -{count}</h1>
 
+      <button
+        onClick={() => {
+          setCount(count + 5);
+        }}
+      >
+        Increment
+      </button>
 
-    <Navbar />
-    <Hero />
-    <Footer />
+      <button
+      onClick={() => {
+        setFlag(false);
+      }}
+      >
+        Change boolean
+        </button>
     </div>
-  )
-}
+  );
+}; 
 
-export default App
+export default App;
+
