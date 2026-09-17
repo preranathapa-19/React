@@ -1,3 +1,23 @@
+// import React from 'react'
+// import Contact from './components/Contact'
+// import Footer from './components/Footer'
+// import Head from './components/Head'
+// import Navbar from './Navbar'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <h1>This is the app</h1>
+//       <Contact />
+//       <Footer />
+//       <Head />
+//       <Navbar />
+
+//     </div>
+//   )
+// }
+
+// export default App
 import { useState } from "react";
 
 const App = () => {
