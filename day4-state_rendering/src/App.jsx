@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import ProductCard from "./ProductCard";
 
 const App = () => {
-  let productsData = [
-    [
+
+  const [productsData, setProductsData] = useState( [
       {
         id: 1,
         title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -274,17 +275,25 @@ const App = () => {
           count: 145,
         },
       },
-    ],
-  ];
-  console.log(productsData);
+    ]);
+
+    const deleteProduct = (id) =>{
+      let products = productsData.filter((elem) => elem.id !==id); 
+      setProductsData(products);
+    }
 
   return (
     <div>
-      <h1>some code is amaz</h1>
-      return
-      {productsData.map((elem) => {
-        <h1>{elem.title}</h1>;
-      })}
+      {/* <h1>some code is rendering....</h1> */}
+   <div className="flex flex-wrap gap-3">  
+    {
+      productsData.map((elem) => {
+      return <ProductCard key={elem.id} product={elem} del={deleteProduct} />;
+      }
+
+      )
+    }
+   </div>
     </div>
   );
 };
